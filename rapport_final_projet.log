@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.15)  29 NOV 2015 00:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.15)  29 NOV 2015 00:53
 entering extended mode
 **rapport_final_projet.tex
 
@@ -1131,7 +1131,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box81
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\here.sty")
-No file rapport_final_projet.aux.
+("C:\Users\van Oldeneel\Documents\UCL - EPL\Bac 2\Q3\Projet 3\RapportFinalProje
+t\rapport_final_projet.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1149,6 +1150,7 @@ LaTeX Font Info:    ... okay on input line 29.
 LaTeX Info: Redefining \degres on input line 29.
 LaTeX Info: Redefining \dots on input line 29.
 LaTeX Info: Redefining \up on input line 29.
+
 
 Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
@@ -1182,6 +1184,11 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
+
+("C:\Users\van Oldeneel\Documents\UCL - EPL\Bac 2\Q3\Projet 3\RapportFinalProje
+t\rapport_final_projet.out")
+("C:\Users\van Oldeneel\Documents\UCL - EPL\Bac 2\Q3\Projet 3\RapportFinalProje
+t\rapport_final_projet.out")
 \@outlinefile=\write4
 
 *geometry* detected driver: pdftex
@@ -1297,7 +1304,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [3
 
-] <debit_NH3_ratio_O2.jpg, id=32, 1204.5pt x 903.375pt>
+] <debit_NH3_ratio_O2.jpg, id=78, 1204.5pt x 903.375pt>
 File: debit_NH3_ratio_O2.jpg Graphic file (type jpg)
 
 <use debit_NH3_ratio_O2.jpg>
@@ -1364,7 +1371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<debit_NH3_ratio_H2O.jpg, id=49, 572.1375pt x 423.5825pt>
+<debit_NH3_ratio_H2O.jpg, id=93, 572.1375pt x 423.5825pt>
 File: debit_NH3_ratio_H2O.jpg Graphic file (type jpg)
 
 <use debit_NH3_ratio_H2O.jpg>
@@ -1388,14 +1395,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 l.127 
        <C:/Users/van Oldeneel/Documents/UCL - EPL/Bac 2/Q3/Projet 3/RapportFina
 lProjet/debit_NH3_ratio_H2O.jpg>]
-<debit_NH3_pression_ATR.jpg, id=58, 562.1pt x 421.575pt>
+<debit_NH3_pression_ATR.jpg, id=101, 562.1pt x 421.575pt>
 File: debit_NH3_pression_ATR.jpg Graphic file (type jpg)
 
 <use debit_NH3_pression_ATR.jpg>
 Package pdftex.def Info: debit_NH3_pression_ATR.jpg used on input line 134.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
-<debit_NH3_Temperature.jpg, id=59, 572.1375pt x 423.5825pt>
+<debit_NH3_Temperature.jpg, id=102, 572.1375pt x 423.5825pt>
 File: debit_NH3_Temperature.jpg Graphic file (type jpg)
 
 <use debit_NH3_Temperature.jpg>
@@ -1449,7 +1456,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 153.
 
-<debit_CO2_ratio_O2.jpg, id=66, 562.1pt x 421.575pt>
+<debit_CO2_ratio_O2.jpg, id=108, 562.1pt x 421.575pt>
 File: debit_CO2_ratio_O2.jpg Graphic file (type jpg)
 
 <use debit_CO2_ratio_O2.jpg>
@@ -1491,7 +1498,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 165.
 
-<debit_CO2_ratio_H2O.jpg, id=74, 562.1pt x 421.575pt>
+<debit_CO2_ratio_H2O.jpg, id=115, 562.1pt x 421.575pt>
 File: debit_CO2_ratio_H2O.jpg Graphic file (type jpg)
 
 <use debit_CO2_ratio_H2O.jpg>
@@ -1505,14 +1512,14 @@ Package pdftex.def Info: debit_CO2_ratio_H2O.jpg used on input line 170.
 l.174 
        <C:/Users/van Oldeneel/Documents/UCL - EPL/Bac 2/Q3/Projet 3/RapportFina
 lProjet/debit_CO2_ratio_O2.jpg>]
-<debit_CO2_pression_ATR.jpg, id=82, 562.1pt x 421.575pt>
+<debit_CO2_pression_ATR.jpg, id=121, 562.1pt x 421.575pt>
 File: debit_CO2_pression_ATR.jpg Graphic file (type jpg)
 
 <use debit_CO2_pression_ATR.jpg>
 Package pdftex.def Info: debit_CO2_pression_ATR.jpg used on input line 179.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
 
-<debit_CO2_Temperature.jpg, id=83, 562.1pt x 421.575pt>
+<debit_CO2_Temperature.jpg, id=122, 562.1pt x 421.575pt>
 File: debit_CO2_Temperature.jpg Graphic file (type jpg)
 
 <use debit_CO2_Temperature.jpg>
@@ -1548,22 +1555,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 t\rapport_final_projet.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
-
-
-Package rerunfilecheck Warning: File `rapport_final_projet.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `rapport_final_projet.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D408E8C8CBF42064D85D91C6669046A3;1034.
+Package rerunfilecheck Info: File `rapport_final_projet.out' has not changed.
+(rerunfilecheck)             Checksum: D408E8C8CBF42064D85D91C6669046A3;1034.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 24962 strings out of 493921
- 474107 string characters out of 3147260
- 523961 words of memory out of 3000000
- 27823 multiletter control sequences out of 15000+200000
+ 24981 strings out of 493921
+ 474919 string characters out of 3147260
+ 524078 words of memory out of 3000000
+ 27836 multiletter control sequences out of 15000+200000
  15542 words of font info for 59 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,8n,56p,10383b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1579,9 +1579,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on rapport_final_projet.pdf (10 pages, 302976 bytes).
+Output written on rapport_final_projet.pdf (10 pages, 306231 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 187 PDF objects out of 1000 (max. 8388607)
  38 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
