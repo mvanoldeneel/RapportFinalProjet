@@ -32,10 +32,7 @@
 
 {\textcolor{carmine}{\chapter{Introduction}}}
 
-
-{\textcolor{carmine}{\chapter{Analyse de sensibilité}}}
-
-Dans le cadre de la deuxième thématique abordée durant notre projet, à savoir la gestion de la production, il nous a été demandé de faire varier certains paramètres du procédé afin d'analyser leur effet sur : \\
+Dans le cadre de la deuxième thématique abordée durant notre projet, à savoir la gestion de la production, il nous a été demandé de faire varier certains paramètres du procédé afin d'analyser leurs effets sur : \\
 \begin{itemize}
 \item La production de $NH_3$, ceci étant notre but premier.
 \item Les débits intermédiaires.
@@ -48,9 +45,9 @@ Nous allons faire varier les paramètres suivants dans les plages de valeurs ind
 
 \begin{tabular}{|l|c|}
 \hline
-Rapport $\frac{O_2}{CH_4}$ à l'entrée de l'ATR & 0.2 - 0.8 \\
+Rapport molaire $\frac{O_2}{CH_4}$ à l'entrée de l'ATR & 0.2 - 0.8 \\
 \hline
-Rapport $\frac{H_2O}{CH_4}$ à l'entrée de l'ATR & 0.5 - 4 \\
+Rapport molaire $\frac{H_2O}{CH_4}$ à l'entrée de l'ATR & 0.5 - 4 \\
 \hline
 Température de sortie de la zone de reforming de l'ATR & 1000 - 1600 [K]\\
 \hline
@@ -64,10 +61,12 @@ Pour chaque variation, nous avons ressorti les graphes correspondants de notre o
 
 
 
-\section{Influence sur le débit final de $NH_3$}
+
+{\textcolor{carmine}{\chapter{Influence sur le débit final de $NH_3$}}}
 
 
-\subsection{Variation du ratio molaire $\frac{O_2}{CH_4}$}
+
+\section{Variation du ratio molaire $\frac{O_2}{CH_4}$}
 
 Grâce au graphe de la figure 1.1 ci dessous, nous avons pu constater que le débit de $NH_3$ est maximum lorsque le ratio molaire $\frac{O_2}{CH_4}$ est à sa plus petite valeur, c'est à dire $0,2$. Cette valeur implique que la concentration molaire en $CH_4$ soit 5 fois plus élevée que celle en $O_2$.
 
@@ -104,7 +103,7 @@ L'azote, $N_2$, étant obtenu par séparation de l'air et étant 4 fois plus pr�
 
 Cela explique donc la forme du graphe obtenu.\\
 
-\subsection{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
+\section{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
 
 Sur le graphe de la figure 2.2 ci-dessous, il apparaît clairement que le débit de $NH_3$ augmente avec le ratio molaire d'alimentation $\frac{H_2O}{CH_4}$.\\
 
@@ -123,9 +122,9 @@ Etant donné que nous considérons cette réaction comme complète,  c'est le r�
 
 Le CO produit dépendant en partie de la quantité d'$H_2O$ entrant dans l'ATR, il est proportionnel au flux entrant de ce dernier. Il est donc normal d'observer une augmentation du débit de sortie de $NH_3$ lorsqu'on augmente l'alimentation en $H_2O$, étant donné que la quantité de $H_2$ présente pour la synthèse en dépend directement.\\
 
-\subsection{Variation de la pression dans l'ATR}
+\section{Variation de la pression dans l'ATR}
 
-\textcolor{red}{\textbf{A NOTER : les K introduits dans l'outil ne dépendent que de T. Or en réalité K1 est proportionnel à $p_{tot}^2$}, ceci est une approximation fournie dans les paramètres de bases.\\}
+Les lois de la physique veulent que, lorsqu'un système est perturbé, il agira toujours dans le but de minimiser la perturbation. Si la perturbation en question est une augmentation de pression, le système va donc chercher à diminuer le nombre de moles de gaz en orientant vers le côté où il y a  le moins de moles de gaz.\\
 
 \begin{figure}[H]
 \begin{center}
@@ -134,8 +133,43 @@ Le CO produit dépendant en partie de la quantité d'$H_2O$ entrant dans l'ATR, 
 \end{center}
 \end{figure}
 
+La pression n'influencera pas la première réaction de l'ATR, le nombre de moles de gaz étant le même de chaque côté.\\
 
-\subsection{Variation de la température de la zone de reforming de l'ATR}
+En ce qui concerne les deux réactions en équilibre ci-dessous, celles-ci seront dirigées dans le sens de la flèche rouge :\\
+
+ \begin{equation}
+ CH_4 + H_2O \hspace{0.5cm}\textcolor{red}{\overleftarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} 3H_2 + CO
+ \end{equation}
+ \begin{equation}
+ CO + 2H_2O \hspace{0.5cm}\textcolor{red}{\overrightarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} H_2 + CO_2
+ \end{equation}
+ 
+ Le système d'équilibre ainsi redirigé explique le graphe obtenu d'une part car la réaction 2.6, de plus en plus dirigée vers les réactifs, produira de moins en moins de $H_2$. Or cette réaction produit la majorité du $H_2$ qui sera utilisée pour la synthèse.\\
+ 
+ D'autre part, la réaction 2.6 produira de moins en moins de $CO$ à mesure que la pression d'opération de l'ATR augmentera. La réaction 2.7 est dirigée vers les produits mais sera limitée par la quantité en CO si celle-ci est trop faible et donc réduira le $H_2$ produit par cette deuxième réaction.\\
+
+La diminution de la production de $NH_3$ est donc expliquée par cette diminution de production de $H_2$, diminution que nous pouvons observer sur le graphe ci-dessous :
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{debit_H2_ATR_pression_ATR}
+\caption{Evolution du débit de H2 à la sortie de l'ATR en fonction de la pression dans celui-ci}
+\end{center}
+\end{figure}
+
+
+\section{Variation de la température de la zone de reforming de l'ATR}
+
+\textcolor{red}{\textbf{!!! INSISTER !!! + graphes avec les courbes de niveau\\
+Tsortie < Tmax ATR si trop grande Tsortie, ATR appréciera pas Tmax.}}
+L'énoncé de Van't Hoff 
+
+ \begin{equation}
+ CH_4 + H_2O \hspace{0.5cm}\textcolor{red}{\overrightarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} 3H_2 + CO \hspace{1cm}\textcolor{red}{ENDO}
+ \end{equation}
+ \begin{equation}
+ CO + 2H_2O \hspace{0.5cm}\textcolor{red}{\overleftarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} H_2 + CO_2 \hspace{1cm}\textcolor{red}{EXO}
+ \end{equation}
+
 
 \begin{figure}[H]
 \begin{center}
@@ -146,11 +180,11 @@ Le CO produit dépendant en partie de la quantité d'$H_2O$ entrant dans l'ATR, 
 
 
 
-\section{Influence sur le débit de $CO_2$}
+\textcolor{carmine}{\chapter{Influence sur le débit de $CO_2$}}
 
-\subsection{Variation du ratio molaire $\frac{O_2}{CH_4}$}
+\section{Variation du ratio molaire $\frac{O_2}{CH_4}$}
 
-Le graphe de la figure 2.5 montre très clairement que le débit de $CO_2$ augmente quasiment linéairement avec l'augmentation du ratio molaire $\frac{O_2}{CH_4}$
+Le graphe de la figure 3.1 montre très clairement que le débit de $CO_2$ augmente quasiment linéairement avec l'augmentation du ratio molaire $\frac{O_2}{CH_4}$
 
 \begin{figure}[H]
 \begin{center}
@@ -169,7 +203,7 @@ Au plus il y a de $O_2$ présent à l'entrée de l'ATR, au plus le nombre de mol
 Le débit de sortie de $CO_2$ est majoritairement constitué de celui rejeté par cette première réaction. En effet, les deux réactions suivantes dans l'ATR se font à l'équilibre, et donc la quantité de $CO_2$ produite est moindre, même si bien présente.\\ 
 
 
-\subsection{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
+\section{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
 
 Lorsque l'on augmente progressivement le ratio molaire $\frac{H_2O}{CH_4}$ on observe également une augmentation du débit de $CO_2$ à la sortie du WGS.\\
 
@@ -194,13 +228,45 @@ De plus, les $H_2O$ et CO restant réagiront ensuite dans le WGS :
 \begin{equation}
 CO + H_2O \rightarrow H_2 + CO_2
 \end{equation}
-Cette réaction est complète de telle façon que tout le $CO$ réagit. Le nombre ce moles de $CO_2$ formées durant cette réaction dépendant donc du nombre de moles de CO présentes, ces dernière dépendant de la quantité de $H_2O$ entrant dans le WGS.\\
+Cette réaction est complète de telle façon que tout le $CO$ réagit. Le nombre de moles de $CO_2$ formées durant cette réaction dépendant donc du nombre de moles de CO présentes, ces dernières dépendant de la quantité de $H_2O$ entrant dans le WGS.\\
 
-Cependant, il est intéressant de remarque la forme non linéraire du graphe. En effet, il apparaît une esquisse de limite dans l'augmentation du débit de $CO_2$ produite en fonction de la quantité de $H_2O$. Cela s'explique par l'équilibre dans lequel se déroulent les deux réaction de l'ATR produisant le CO et le $CO_2$.
+Cependant, il est intéressant de remarquer la forme non linéaire du graphe. En effet, il apparaît une esquisse de limite dans l'augmentation du débit de $CO_2$ produit en fonction de la quantité de $H_2O$. Cela s'explique par le fait que la quantité de $CH_4$ présent pour réagir avec l'$H_2O$, si elle est inférieure au nombre de moles de $H_2O$ présentes, déterminera le nombre de moles qui réagiront. Donc, la limite apparait lorsque la quantité d'$H_2O$ disponible pour la réaction a dépassé la quantité de $CH_4$.\\
 
 
 
-\subsection{Variation de la pression dans l'ATR}
+
+\section{Variation de la pression dans l'ATR}
+
+Lorsque l'on augmente la pression d'opération de l'ATR, le débit de $CO_2$ est influencé de deux façons différentes à deux endroits du systèmes réactionnel.\\
+
+Tout d'abord, voici le graphe du débit de $CO_2$ à la sortie de l'ATR en fonction de l'augmentation de la pression d'opération de ce dernier.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{debit_CO2_ATR_pression_ATR}
+\caption{Evolution du débit de sortie de l'ATR de $CO_2$ en fonction de la pression dans l'ATR}
+\end{center}
+\end{figure}
+
+Ce graphe montre une nette augmentation du débit de $CO_2$ à la sortie de l'ATR qui s'explique au moyen des mêmes principes de physique que ceux  évoqués au point 2.3, les équilibres des deux dernières équations de l'ATR seront influencés de la manière suivante :\\
+
+ \begin{equation}
+ CH_4 + H_2O \hspace{0.5cm}\textcolor{red}{\overleftarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} 3H_2 + CO
+ \end{equation}
+ \begin{equation}
+ CO + 2H_2O \hspace{0.5cm}\textcolor{red}{\overrightarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} H_2 + CO_2
+ \end{equation}
+
+L'augmentation de la production de $CO_2$ dans l'ATR est donc expliquée par la réaction 2.13, qui favorise de plus en plus les produits à mesure que la pression augmente. La production de $CO_2$ est donc favorisée car la réaction se rapprochera de plus en plus d'une réaction complète.\\
+
+D'autre part, le graphe ci-dessous nous montre que le débit final de $CO_2$ diminue très nettement avec l'augmentation de pression. Ceci est dû à la réaction qui se produit dans le WGS.
+\begin{equation}
+CO + H_2O \rightarrow H_2 + CO_2
+\end{equation}
+Cette réaction considérée comme complète produit une grande partie du $CO_2$ total rejeté. Elle dépend de l'$H_2O$ et du CO qui sortent du WGS et qui sont donc prêts à réagir.\\
+Or, la réaction 2.12 favorise largement les produits et donc diminue de plus en plus la production en CO à mesure que la pression augmente. La réaction 2.13 favorise la réaction du CO, alors que la quantité disponible est déjà amoindrie.\\
+Cela implique une quantité de moins en moins grande de CO dans le WGS et donc de moins en moins de $CO_2$ produit par celui-ci.\\
+La quantité de $CO_2$ produite par l'ATR étant bien à bien moindre échelle que celle produite par le WGS, cela explique le graphe obtenu.\\
 
 \begin{figure}[H]
 \begin{center}
@@ -208,8 +274,14 @@ Cependant, il est intéressant de remarque la forme non linéraire du graphe. En
 \caption{Evolution du débit de sortie de $CO_2$ en fonction de la pression dans l'ATR}
 \end{center}
 \end{figure}
+ 
 
-\subsection{Variation de la température de la zone de reforming de l'ATR}
+
+
+
+
+
+\section{Variation de la température de la zone de reforming de l'ATR}
 
 \begin{figure}[H]
 \begin{center}
@@ -219,9 +291,9 @@ Cependant, il est intéressant de remarque la forme non linéraire du graphe. En
 \end{figure}
 
 
-\section{Influence sur la température maximale de l'ATR}
+\textcolor{carmine}{\chapter{Influence sur la température maximale de l'ATR}}
 
-\subsection{Variation du ratio molaire $\frac{O_2}{CH_4}$}
+\section{Variation du ratio molaire $\frac{O_2}{CH_4}$}
 
 
 
@@ -233,7 +305,7 @@ Cependant, il est intéressant de remarque la forme non linéraire du graphe. En
 \end{figure}
 
 
-\subsection{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
+\section{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
 
 
 \begin{figure}[H]
@@ -243,7 +315,7 @@ Cependant, il est intéressant de remarque la forme non linéraire du graphe. En
 \end{center}
 \end{figure}
 
-\subsection{Variation de la pression dans l'ATR}
+\section{Variation de la pression dans l'ATR}
 
 \begin{figure}[H]
 \begin{center}
@@ -252,7 +324,9 @@ Cependant, il est intéressant de remarque la forme non linéraire du graphe. En
 \end{center}
 \end{figure}
 
-\subsection{Variation de la température de la zone de reforming de l'ATR}
+\section{Variation de la température de la zone de reforming de l'ATR}
+
+Pour thématique 4 dans laquelle il nous a été demandé de planifier l'arrêt du réacteur, il nous a été demandé 
 
 \begin{figure}[H]
 \begin{center}
@@ -260,6 +334,9 @@ Cependant, il est intéressant de remarque la forme non linéraire du graphe. En
 \caption{Evolution de la température maximale de l'ATR en fonction de la température de sortie de la zone de reforming de l'ATR}
 \end{center}
 \end{figure}
+
+{\textcolor{carmine}{\chapter{Conclusion}}}
+
 
 
 \end{document}
