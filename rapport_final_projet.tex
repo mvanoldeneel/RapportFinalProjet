@@ -159,9 +159,14 @@ La diminution de la production de $NH_3$ est donc expliquée par cette diminutio
 
 \section{Variation de la température de la zone de reforming de l'ATR}
 
-\textcolor{red}{\textbf{!!! INSISTER !!! + graphes avec les courbes de niveau\\
-Tsortie < Tmax ATR si trop grande Tsortie, ATR appréciera pas Tmax.}}
-L'énoncé de Van't Hoff 
+La loi expérimentale de Van't Hoff nous dit:
+
+
+\begin{center}
+"Une élévation de température appliquée à un système fermé en équilibre et maintenu à pression ou à volume constant entraine un déplacement voire une rupture d'équilibre dans le sens de la réaction qui, à température et à pression ou volume constants, est \textbf{endothermique}."\footnote{https://fr.wikipedia.org/wiki/D, consulté le 03/12/2015}
+\end{center} 
+
+Ainsi, les équilibres réactionnels dans l'ATR seront déplacés comme ci-dessous à mesure de l'augmentation de la température de sortie.\\
 
  \begin{equation}
  CH_4 + H_2O \hspace{0.5cm}\textcolor{red}{\overrightarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} 3H_2 + CO \hspace{1cm}\textcolor{red}{ENDO}
@@ -170,6 +175,31 @@ L'énoncé de Van't Hoff
  CO + 2H_2O \hspace{0.5cm}\textcolor{red}{\overleftarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} H_2 + CO_2 \hspace{1cm}\textcolor{red}{EXO}
  \end{equation}
 
+Le sens des équilibres modifiés selon les flèches rouges favorise la production de $H_2$ pour la réaction 2.8, qui produit une grande partie du $H_2$ utilisé ensuite dans la synthèse finale. Ceci permet donc une augmentation du $H_2$ sortant de l'ATR.\\
+Cette augmentation est confirmée par le graphe de la figure 2.5 ci-dessous.\\
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{debit_H2_ATR_Temperature}
+\caption{Evolution du débit de $H_2$ à la sortie de l'ATR en fonction de la température de la zone de reforming de l'ATR}
+\end{center}
+\end{figure}
+
+De plus, l'équilibre 2.9 est déplacé dans le sens des produits et minimise la réaction du CO de telle façon que la quantité de CO sortant de l'ATR disponible pour le WGS augmente avec la température.\\
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{debit_CO_ATR_Temperature}
+\caption{Evolution du débit de $H_2$ à la sortie de l'ATR en fonction de la température de la zone de reforming de l'ATR}
+\end{center}
+\end{figure}
+
+Plus de CO dans le WGS permet de sortir encore plus de $H_2$ et donc vraiment optimiser la production.\\
+
+Ce qui explique le graphe ci-dessous du débit de sortie de $NH_3$ en fonction de la température à la sortie de l'ATR.\\
+
+Une limite du débit de $NH_3$ se dessine sur le graphe et s'explique par les quantités des autres réactifs qui demeurent inchangées et peuvent donc devenir limitantes.\\
 
 \begin{figure}[H]
 \begin{center}
@@ -283,12 +313,42 @@ La quantité de $CO_2$ produite par l'ATR étant bien à bien moindre échelle q
 
 \section{Variation de la température de la zone de reforming de l'ATR}
 
+
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.6]{debit_CO2_Temperature}
 \caption{Evolution du débit de sortie de $CO_2$ en fonction de la température de sortie de la zone de reforming de l'ATR}
 \end{center}
 \end{figure}
+
+Le débit de $CO_2$ total produit augmente avec la température, comme cela s'observe sur le graphe.\\
+
+Pour expliquer ce phénomène, il faut reprendre le même principe de physique que celui énoncé au point 2.4 et donc les mêmes déplacements d'équilibre:
+
+ \begin{equation}
+ CH_4 + H_2O \hspace{0.5cm}\textcolor{red}{\overrightarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} 3H_2 + CO \hspace{1cm}\textcolor{red}{ENDO}
+ \end{equation}
+ \begin{equation}
+ CO + 2H_2O \hspace{0.5cm}\textcolor{red}{\overleftarrow{\textcolor{black}{\Longleftrightarrow}}} \hspace{0.5cm} H_2 + CO_2 \hspace{1cm}\textcolor{red}{EXO}
+ \end{equation}
+ 
+ L'équilibre réactionnel 3.8 ainsi modifié provoque une diminution du $CO_2$ produit, mais engendre également une augmentation du CO, parallèlement à l'équilibre 3.9. Augmenter la température maximise donc progressivement la quantité de CO sortant de l'ATR et prête à réagir dans le WGS.\\
+ 
+ \begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{debit_CO_ATR_Temperature}
+\caption{Evolution du débit de $CO$ à la sortie de l'ATR en fonction de la température de sortie de la zone de reforming de l'ATR}
+\end{center}
+\end{figure}
+
+ La réaction dans le WGS est donc favorisée et le nombre de moles qui réagissent augmente, dans les limites de l'$H_2O$ disponible.
+ \begin{equation}
+CO + H_2O \rightarrow H_2 + CO_2
+\end{equation}
+La quantité de $CO_2$ produite dans le WGS augmente donc et vient s'ajouter à celle produite lors de la combustion.\\
+
+Ceci explique bien le graphe obtenu du débit final de $CO_2$ en fonction de l'augmentation de la température.
 
 
 \textcolor{carmine}{\chapter{Influence sur la température maximale de l'ATR}}
