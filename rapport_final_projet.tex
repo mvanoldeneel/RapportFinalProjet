@@ -17,7 +17,7 @@
 \usepackage[section]{placeins} 
 \usepackage{float} 
 \usepackage{here}
- 
+\usepackage{wrapfig}
  
 \definecolor{orange}{cmyk}{0,0.5,1,0}
 \definecolor{forestgreen}{rgb}{0.13,0.54,0.13}
@@ -29,6 +29,14 @@
 \begin{document}
 
 \renewcommand{\arraystretch}{1.5}
+
+\begin{titlepage}
+
+
+\end{titlepage}
+
+
+\tableofcontents
 
 {\textcolor{carmine}{\chapter{Introduction}}}
 
@@ -353,49 +361,131 @@ Ceci explique bien le graphe obtenu du débit final de $CO_2$ en fonction de l'a
 
 \textcolor{carmine}{\chapter{Influence sur la température maximale de l'ATR}}
 
-\section{Variation du ratio molaire $\frac{O_2}{CH_4}$}
+L'évolution de la température atteinte dans l'ATR en fonction de la température d'entrée des produits se fait en 2 temps. Tout d'abord la combustion, exothermique, va dégager une grande quantité de chaleur et donc augmenter considérablement la température qui sera alors à son maximum (\textbf{Tmax}, comme indiqué sur la figure 4.1).\\
+ Une telle augmentation de la température va permettre aux 2 réactions en équilibre de se produire. Bien qu'une des réactions soit exothermique, le bilan des deux réaction sera toujours endothermique. Ainsi, la température de l'ATR va redescendre à la valeur de sortie (\textbf{Tout} sur le schéma).\\
+ 
+
+ 
+Ces températures sont liées entre elles par la thermodynamique des réactions et sont régulées par des équations prenant en compte deux différences de température. \\
+
+$$\Delta T_1 = T_{max} - T_{in}$$
+$$\Delta T_2 = T_{out} - T_{max}$$
 
 
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.6]{Tmax_ratio_O2}
-\caption{Evolution de la température maximale de l'ATR en fonction du ratio molaire $\frac{O_2}{CH_4}$}
-\end{center}
-\end{figure}
+{\begin{wrapfigure}[3]{l}{3.2cm}
+\vspace{-13mm}
+\includegraphics[scale=0.5]{schema_temperature}
+\caption{Température dans l'ATR}
+\end{wrapfigure}
+%\begin{figure}{H}
+%\begin{center}
+%\includegraphics[scale=0.6]{schema_temperature}
+%\caption{Schéma de l'évolution de la température dans l'ATR}
+%\end{center}
+%\end{figure}
+\bigskip
+\begin{equation}
+CH_4 + 2O_2 \rightarrow CO_2 + 2H_2O
+\end{equation}
+
+\bigskip
+
+ \begin{equation}
+ CH_4 + H_2O \leftrightarrow 3H_2 + CO
+ \end{equation}
+ 
+ \begin{equation}
+ CO + 2H_2O \leftrightarrow H_2 + CO_2
+ \end{equation}}
+
+\newpage
 
 
-\section{Variation du ratio molaire $\frac{H_2O}{CH_4}$}
+Pour la première réaction, nous considérons dans nos calculs que l'entièreté de l'énergie dégagée est utilisée pour faire monter la température et nous obtenons donc, à l'aide des concepts de thermodynamique vus au cours, cette relation : \\
+$$ C_p\Delta T_1 = -\Delta H_{massique,1}D_{CH_4}$$
+
+Qui nous amène à cette expression de $T_1$ : 
+
+$$\Delta T_1 = \frac{-\Delta H_{massique,1} D_{CH_4}}{C_p D_{tot}}$$
+
+En ayant connaissance des débits respectifs de $CH_4$ et de $CO$ qui réagissent lors de la deuxième étape (l'équilibre) et donc de la quantité d'énergie dégagée par jour, nous pouvons appliquer la même démarche thermodynamique. Nous considérons à nouveau que toute l'énergie dégagée par la combustion a été utilisée pour augmenter la température des gaz en présence. \\
+
+$$ C_p \Delta T_2 = -(\Delta H_{massique,2} D_{CH_4*} + \Delta H_{massique,3}D_{CO})$$
+$$\Leftrightarrow$$ 
+$$ \Delta T_2 = \frac{\Delta H_{massique,2}D_{CH_4*}+\Delta H_{massique,3}D_{CO}}{C_p D_{tot}}$$\\
+
+\textit{$\Delta H_{i}$ = enthalpie de la réaction i, $C_p$ = capacité calorifique massique à pression constante, $D_{CH_4}$ = débit de $CH_4$ qui réagit lors de la première étape, $D_{CH_4}$ = débit de $CH_4$ qui réagit lors de la deuxième étape, $D_{CO}$ = débit de CO qui réagit lors de la deuxième étape }\bigskip \\
 
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.6]{Tmax_ratio_H2O}
-\caption{Evolution de la température maximale de l'ATR en fonction du ratio molaire $\frac{H_2O}{CH_4}$}
-\end{center}
-\end{figure}
 
-\section{Variation de la pression dans l'ATR}
+La température que nous pouvons faire varier est la température de sortie, à savoir \textbf{Tout} sur le schéma 4.1.\\
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.6]{Tmax_pression_ATR}
-\caption{Evolution de la température maximale de l'ATR en fonction de la pression dans l'ATR}
-\end{center}
-\end{figure}
+On possède donc les expressions de \textbf{Tin} et \textbf{Tmax} en fonction de \textbf{Tout} : 
 
-\section{Variation de la température de la zone de reforming de l'ATR}
+\begin{equation}
+T_{max} = T_{out} - \frac{\Delta H_{massique,2}D_{CH_4*}+\Delta H_{massique,3}D_{CO}}{C_p D_{tot}}
+\end{equation}\\
 
-Pour thématique 4 dans laquelle il nous a été demandé de planifier l'arrêt du réacteur, il nous a été demandé 
+$$T_{in} = T_{max} - \frac{-\Delta H_{massique,1} D_{CH_4}}{C_p D_{tot}}$$
+$$\Leftrightarrow$$
+\begin{equation}
+T_{in} = T_{out} - \frac{\Delta H_{massique,2}D_{CH_4*}+\Delta H_{massique,3}D_{CO} - \Delta H_{massique,1} D_{CH_4}}{C_p D_{tot}}
+\end{equation}
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.6]{Tmax_Tsortie}
-\caption{Evolution de la température maximale de l'ATR en fonction de la température de sortie de la zone de reforming de l'ATR}
-\end{center}
-\end{figure}
+
+
+Ces expressions des températures "clé" de l'ATR sont très explicites et nous permettent facilement de comprendre quelles conséquences auront les variations de débit sur celles-ci.\\
+
+Grâce à cela, nous pourrons veiller à ce que la \textbf{Tmax} n'atteigne jamais de valeur trop élevée pour la capacité de résistance de l'ATR et du procédé. Cela est surtout évoqué lors de la thématique 4, dans laquelle nous étudions l'arrêt du réacteur. \\
+
+En ce qui concerne la production de $NH_3$, celle-ci est proportionnelle à la température de l'ATR, jusqu'à une certaine limite. Ainsi, augmenter $T_{max}$ augmente le rendement en $NH_3$.\\
+Au vu de l'équation 4.4, nous devons pour cela diminuer la quantité de $CH_4$ qui réagit lors de la deuxième étape et donc augmenter la quantité initiale d'$O_2$. Nous pouvons également diminuer la quantité de CO réagissant à cette même étape, ce qui revient à la même diminution de $CH_4$ pouvant réagir.\\
+
+ \bigskip
+
+\begin{Huge}
+\textcolor{red}{\textbf{GRAPHE DE Tmax EN FONCTION DE DEBIT $CH_4$ apres combustion et Dco}}
+\end{Huge}
+
+{\textcolor{carmine}{\chapter{Volume d'$O_2$ à traiter}}}
+
+Le processus de séparation de l'air est coûteux et énergivore. Il nous faudra donc en tenir compte lorsque que nous fixerons nos paramètres sur la combinaison qui selon nous, sera la plus appropriée.\\
+
+Lors des sections précédentes, nous avons, pour chaque élément étudié, fait varier le ratio molaire $\frac{0_2}{CH_4}$ à l'entrée de l'ATR.  Nous avons donc pu remarquer qu'augmenter ce ratio provoquait : \\
+\begin{itemize}
+\item Une baisse du débit total de $NH_3$
+\item Une augmentation de la production de $CO_2$
+\item Une baisse de la température maximale atteinte dans l'ATR
+\end{itemize}
+
+Cela s'explique d'une part par l'étude des réactions et d'autre part par le bilan thermique du procédé, en ce qui concerne la température maximale.\\
+
+A première vue cela semble nous arranger, mais il faut rester vigilant. En effet, il y a des conditions à respecter pour que le procédé se déroule correctement.\\
+
+En effet, il nous faut une combustion assez importante pour que la \textbf{Tmax}, atteinte à la suite de celle-ci, soit suffisante pour "activer" les deux réactions suivantes sans lesquelles nous n'avons pas de $H_2$ et donc pas de $NH_3$.\\
+Si on retourne au graphe 2.5, nous avons la preuve que le débit de $NH_3$ est proportionnel à la température de l'ATR. Or, cette température dépend directement de l'ampleur de la combustion. 
+\bigskip
+
+\begin{Huge}
+\textcolor{red}{\textbf{Tmin POUR QUE LA REACTION SE PRODUISE }}
+\end{Huge}
 
 {\textcolor{carmine}{\chapter{Conclusion}}}
+
+Grâce à notre outil de simulation du procédé (réalisé avec Matlab), nous avons pu approfondir notre compréhension de cet enchaînement de réactions afin de percevoir les liens, causes et conséquences entre la plupart des paramètres.\\
+Ce procédé est constitué d'une série de conditions, réactions, et subtilités qui s'influencent entre elles et nous sommes bien conscients que notre outil est simplifié par rapport à la complexité de la réalité. Nous pensons cependant avoir pu saisir l'essentiel.\\
+
+Tout d'abord, reprenons nos objectifs de départ : \\
+\begin{itemize}
+\item Maximiser le rendemment de $NH_3$
+\item Minimiser la quantité d'$O_2$ à traiter
+\item Minimiser la quantité de $CO_2$ rejetée dans l'environnement
+\end{itemize}
+
+En ce qui concerne le $CO_2$ nous avons décider de lui donner une seconde vie en le revendant à une entreprise alimentaire proche de nos installations. Cela évitera une préoccupation excessive sur les dégâts environnementaux causés par ce dernier tout en nous offrant un petit apport financier.\\
+
+Ensuite, il nous faut maximiser le rendement final de $NH_3$. Pour ce faire, notre analyse nous a montré qu'il fallait éviter des quantité excessives d'$O_2$, afin qu'il reste suffisamment de $CH_4$ pour réagir lors de la deuxième étape de l'ATR. Trouver le bon équilibre entre la chaleur demandée pour le déroulement de cette étape et la quantité de $CH_4$ nécessaire... Là se trouve la question plus complexe, pour laquelle il faudra procéder au moyen de tests.\\
 
 
 
